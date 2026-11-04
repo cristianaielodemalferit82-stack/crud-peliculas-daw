@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Peliculas - DAW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>🎬 Gestor de Peliculas</h1>
+
+        <!-- Formulario para Crear / Editar -->
+        <section class="form-section">
+            <h2 id="form-title">Añadir una nueva pelicula</h2>
+            <form id="movie-form">
+                <input type="hidden" id="movie-id">
+                
+                <div class="form-group">
+                    <label for="title">Titulo:</label>
+                    <input type="text" id="title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="director">Director:</label>
+                    <input type="text" id="director" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="year">Año:</label>
+                    <input type="number" id="year" required>
+                </div>
+
+                <button type="submit" id="btn-submit">Guardar</button>
+            </form>
+        </section>
+
+        <!-- Listado de Peliculas -->
+        <section class="list-section">
+            <h2>Listado de peliculas</h2>
+            <div id="movies-container" class="movies-grid"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
